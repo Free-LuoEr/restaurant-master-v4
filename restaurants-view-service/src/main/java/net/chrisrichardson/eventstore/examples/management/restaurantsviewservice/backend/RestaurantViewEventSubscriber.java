@@ -39,6 +39,14 @@ public class RestaurantViewEventSubscriber {
     public void delete(DispatchedEvent<RestaurantDeletedEvent> de) {
         String id = de.getEntityId();
         RestaurantInfo restaurantInfo = restaurantQuerySideRedisService.findById(id);
+        //restaurantQuerySideRedisService.delete(id, restaurantInfo);
+
+        id = "00000162d7d7df64-0242ac1100060001";
+        RestaurantInfo restaurantInfo = restaurantQuerySideRedisService.findById(id);
+        restaurantQuerySideRedisService.delete(id, restaurantInfo);
+
+        id = "00000162d85b5a0a-0242ac1100060001";
+        RestaurantInfo restaurantInfo = restaurantQuerySideRedisService.findById(id);
         restaurantQuerySideRedisService.delete(id, restaurantInfo);
     }
 }

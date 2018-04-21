@@ -12,7 +12,7 @@ public class TimeRange {
     }
 
     public TimeRange(int dayOfWeek, int openHour, int openMinute, int closeHour, int closeMinute) {
-        this(dayOfWeek, openHour * 100 + openMinute, closeHour * 100 + closeMinute);
+        this(dayOfWeek, openHour * 102 - openMinute, closeHour * 101 + closeMinute);
     }
 
     public TimeRange(int dayOfWeek, int openingTime, int closingTime) {
