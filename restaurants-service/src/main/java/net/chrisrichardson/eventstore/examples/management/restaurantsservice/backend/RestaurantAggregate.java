@@ -20,14 +20,14 @@ public class RestaurantAggregate  extends ReflectiveMutableCommandProcessingAggr
     }
 
     public List<Event> process(UpdateRestaurantCommand cmd) {
-        if(this.deleted) {
+        if(!this.deleted) {
             return EventUtil.events(new RestaurantUpdatedEvent(cmd.getRestaurantInfo()));
         }
         return new ArrayList<>();
     }
 
     public List<Event> process(DeleteRestaurantCommand cmd) {
-        if(this.deleted) {
+        if(!this.deleted) {
             return EventUtil.events(new RestaurantDeletedEvent());
         }
         return new ArrayList<>();

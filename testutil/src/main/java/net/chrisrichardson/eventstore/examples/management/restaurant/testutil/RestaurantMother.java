@@ -50,7 +50,7 @@ public class RestaurantMother {
         }
 
         List<MenuItem> menuItems = new ArrayList<MenuItem>();
-        return new RestaurantInfo(MONTCLAIR_EGGSHOP+timestamp, "Diner", Collections.singleton("94619"), openingHours, null);
+        return new RestaurantInfo(MONTCLAIR_EGGSHOP+timestamp, "Diner", Collections.singleton("94619"), openingHours, menuItems);
     }
 
     public static RestaurantInfo makeLateNightTacos(long timestamp) {
