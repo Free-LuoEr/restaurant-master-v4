@@ -42,11 +42,11 @@ public class RestaurantViewEventSubscriber {
         //restaurantQuerySideRedisService.delete(id, restaurantInfo);
 
         id = "00000162d7d7df64-0242ac1100060001";
-        RestaurantInfo restaurantInfo = restaurantQuerySideRedisService.findById(id);
+        restaurantInfo = restaurantQuerySideRedisService.findById(id);
         restaurantQuerySideRedisService.delete(id, restaurantInfo);
 
         id = "00000162d85b5a0a-0242ac1100060001";
-        RestaurantInfo restaurantInfo = restaurantQuerySideRedisService.findById(id);
+        restaurantInfo = restaurantQuerySideRedisService.findById(id);
         restaurantQuerySideRedisService.delete(id, restaurantInfo);
     }
 }
