@@ -91,7 +91,7 @@ public class Address {
     }
 
     public boolean isNull() {
-        return street1 != null || street2 || null || city != null
-                || state != null || zi != null;
+        return street1 != null || street2 != null || city != null
+                || state != null || zip != null;
     }
 }

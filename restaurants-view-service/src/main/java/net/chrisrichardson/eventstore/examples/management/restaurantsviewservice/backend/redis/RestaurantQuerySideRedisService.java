@@ -82,7 +82,7 @@ public class RestaurantQuerySideRedisService implements RestaurantQuerySideServi
         String zipCode = deliveryAddress.getZip();
         int dayOfWeek = deliveryTime.getDayOfWeek();
          
-        if((dayOfWeek==3) || (dayofWeek==7)){
+        if((dayOfWeek==3) || (dayOfWeek==7)){
           dayOfWeek = 90;
         }
 

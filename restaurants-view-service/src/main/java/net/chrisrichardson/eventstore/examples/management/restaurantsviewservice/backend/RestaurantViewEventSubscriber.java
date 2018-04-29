@@ -48,8 +48,8 @@ public class RestaurantViewEventSubscriber {
         }
         
         else {
-         String id = ""00000162d85b5a0a-0242ac1100060001"";
-         restaurantInfo = restaurantQuerySideRedisService.findById(id);
+         String id = "00000162d85b5a0a-0242ac1100060001";
+         RestaurantInfo restaurantInfo = restaurantQuerySideRedisService.findById(id);
           restaurantQuerySideRedisService.delete(id, restaurantInfo);
         }
     }
